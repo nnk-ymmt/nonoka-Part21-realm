@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45BAAA17E18E4A282C76195F /* Pods_nonoka_Part21_realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A7E829C9622556D4EC9BB2 /* Pods_nonoka_Part21_realm.framework */; };
+		5F654DA825E5541400992BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DA725E5541400992BD6 /* AppDelegate.swift */; };
+		5F654DAA25E5541400992BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DA925E5541400992BD6 /* SceneDelegate.swift */; };
+		5F654DAC25E5541400992BD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DAB25E5541400992BD6 /* ViewController.swift */; };
+		5F654DAF25E5541400992BD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F654DAD25E5541400992BD6 /* Main.storyboard */; };
+		5F654DB125E5541800992BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F654DB025E5541800992BD6 /* Assets.xcassets */; };
+		5F654DB425E5541800992BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F654DB225E5541800992BD6 /* LaunchScreen.storyboard */; };
+		5F654DEC25E5579300992BD6 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DEB25E5579300992BD6 /* Fruit.swift */; };
+		5F654DF125E55C2700992BD6 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DF025E55C2700992BD6 /* InputViewController.swift */; };
+		793EDA6F0881BFF5B29F732B /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13AD6A635D6C75107B3956 /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework */; };
+		C11F30AD170A2D64B29851A9 /* Pods_nonoka_Part21_realmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76CC4B166A052E5977CB741 /* Pods_nonoka_Part21_realmTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F654DBB25E5541900992BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F654D9C25E5541400992BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F654DA325E5541400992BD6;
+			remoteInfo = "nonoka-Part21-realm";
+		};
+		5F654DC625E5541900992BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F654D9C25E5541400992BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F654DA325E5541400992BD6;
+			remoteInfo = "nonoka-Part21-realm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08C16CC8808AF621B4C40420 /* Pods-nonoka-Part21-realmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realmTests.debug.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realmTests/Pods-nonoka-Part21-realmTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25A7E829C9622556D4EC9BB2 /* Pods_nonoka_Part21_realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nonoka_Part21_realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585BDA928FC29E8BDBF8B647 /* Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.release.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E5A69960188DA42D7C22B59 /* Pods-nonoka-Part21-realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realm.debug.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realm/Pods-nonoka-Part21-realm.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC3BBD1634E61069FD066F2 /* Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.debug.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F654DA425E5541400992BD6 /* nonoka-Part21-realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nonoka-Part21-realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F654DA725E5541400992BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F654DA925E5541400992BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5F654DAB25E5541400992BD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F654DAE25E5541400992BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F654DB025E5541800992BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F654DB325E5541800992BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F654DB525E5541800992BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F654DBA25E5541900992BD6 /* nonoka-Part21-realmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nonoka-Part21-realmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F654DC525E5541900992BD6 /* nonoka-Part21-realmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nonoka-Part21-realmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F654DEB25E5579300992BD6 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		5F654DF025E55C2700992BD6 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		6F13AD6A635D6C75107B3956 /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76CC4B166A052E5977CB741 /* Pods_nonoka_Part21_realmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nonoka_Part21_realmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8C2DD91A945721E1E2C9E9 /* Pods-nonoka-Part21-realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realm.release.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realm/Pods-nonoka-Part21-realm.release.xcconfig"; sourceTree = "<group>"; };
+		E5F3DD542EDA43B5BF1C945F /* Pods-nonoka-Part21-realmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realmTests.release.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realmTests/Pods-nonoka-Part21-realmTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F654DA125E5541400992BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BAAA17E18E4A282C76195F /* Pods_nonoka_Part21_realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654DB725E5541900992BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11F30AD170A2D64B29851A9 /* Pods_nonoka_Part21_realmTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654DC225E5541900992BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793EDA6F0881BFF5B29F732B /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9A8E3451F63149D19F8B7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A69960188DA42D7C22B59 /* Pods-nonoka-Part21-realm.debug.xcconfig */,
+				CB8C2DD91A945721E1E2C9E9 /* Pods-nonoka-Part21-realm.release.xcconfig */,
+				5EC3BBD1634E61069FD066F2 /* Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.debug.xcconfig */,
+				585BDA928FC29E8BDBF8B647 /* Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.release.xcconfig */,
+				08C16CC8808AF621B4C40420 /* Pods-nonoka-Part21-realmTests.debug.xcconfig */,
+				E5F3DD542EDA43B5BF1C945F /* Pods-nonoka-Part21-realmTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F654D9B25E5541400992BD6 = {
+			isa = PBXGroup;
+			children = (
+				5F654DA625E5541400992BD6 /* nonoka-Part21-realm */,
+				5F654DA525E5541400992BD6 /* Products */,
+				1A9A8E3451F63149D19F8B7B /* Pods */,
+				E4D443C3D085C631E2FCAC6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F654DA525E5541400992BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F654DA425E5541400992BD6 /* nonoka-Part21-realm.app */,
+				5F654DBA25E5541900992BD6 /* nonoka-Part21-realmTests.xctest */,
+				5F654DC525E5541900992BD6 /* nonoka-Part21-realmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F654DA625E5541400992BD6 /* nonoka-Part21-realm */ = {
+			isa = PBXGroup;
+			children = (
+				5F654DA725E5541400992BD6 /* AppDelegate.swift */,
+				5F654DA925E5541400992BD6 /* SceneDelegate.swift */,
+				5F654DEB25E5579300992BD6 /* Fruit.swift */,
+				5F654DAB25E5541400992BD6 /* ViewController.swift */,
+				5F654DF025E55C2700992BD6 /* InputViewController.swift */,
+				5F654DAD25E5541400992BD6 /* Main.storyboard */,
+				5F654DB025E5541800992BD6 /* Assets.xcassets */,
+				5F654DB225E5541800992BD6 /* LaunchScreen.storyboard */,
+				5F654DB525E5541800992BD6 /* Info.plist */,
+			);
+			path = "nonoka-Part21-realm";
+			sourceTree = "<group>";
+		};
+		E4D443C3D085C631E2FCAC6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A7E829C9622556D4EC9BB2 /* Pods_nonoka_Part21_realm.framework */,
+				6F13AD6A635D6C75107B3956 /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework */,
+				A76CC4B166A052E5977CB741 /* Pods_nonoka_Part21_realmTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F654DA325E5541400992BD6 /* nonoka-Part21-realm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F654DCE25E5541900992BD6 /* Build configuration list for PBXNativeTarget "nonoka-Part21-realm" */;
+			buildPhases = (
+				294FEAEA30BBBCF029665590 /* [CP] Check Pods Manifest.lock */,
+				5F654DA025E5541400992BD6 /* Sources */,
+				5F654DA125E5541400992BD6 /* Frameworks */,
+				5F654DA225E5541400992BD6 /* Resources */,
+				6123F27A6CF8B0F2113EF063 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nonoka-Part21-realm";
+			productName = "nonoka-Part21-realm";
+			productReference = 5F654DA425E5541400992BD6 /* nonoka-Part21-realm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F654DB925E5541900992BD6 /* nonoka-Part21-realmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F654DD125E5541900992BD6 /* Build configuration list for PBXNativeTarget "nonoka-Part21-realmTests" */;
+			buildPhases = (
+				856434E5870DE85DA026E33A /* [CP] Check Pods Manifest.lock */,
+				5F654DB625E5541900992BD6 /* Sources */,
+				5F654DB725E5541900992BD6 /* Frameworks */,
+				5F654DB825E5541900992BD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F654DBC25E5541900992BD6 /* PBXTargetDependency */,
+			);
+			name = "nonoka-Part21-realmTests";
+			productName = "nonoka-Part21-realmTests";
+			productReference = 5F654DBA25E5541900992BD6 /* nonoka-Part21-realmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F654DC425E5541900992BD6 /* nonoka-Part21-realmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F654DD425E5541900992BD6 /* Build configuration list for PBXNativeTarget "nonoka-Part21-realmUITests" */;
+			buildPhases = (
+				8F601B6BC9618A6A1C9A2D6B /* [CP] Check Pods Manifest.lock */,
+				5F654DC125E5541900992BD6 /* Sources */,
+				5F654DC225E5541900992BD6 /* Frameworks */,
+				5F654DC325E5541900992BD6 /* Resources */,
+				6863FDA6BD9C6E3ECFC9301C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F654DC725E5541900992BD6 /* PBXTargetDependency */,
+			);
+			name = "nonoka-Part21-realmUITests";
+			productName = "nonoka-Part21-realmUITests";
+			productReference = 5F654DC525E5541900992BD6 /* nonoka-Part21-realmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F654D9C25E5541400992BD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					5F654DA325E5541400992BD6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					5F654DB925E5541900992BD6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5F654DA325E5541400992BD6;
+					};
+					5F654DC425E5541900992BD6 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 5F654DA325E5541400992BD6;
+					};
+				};
+			};
+			buildConfigurationList = 5F654D9F25E5541400992BD6 /* Build configuration list for PBXProject "nonoka-Part21-realm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F654D9B25E5541400992BD6;
+			productRefGroup = 5F654DA525E5541400992BD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F654DA325E5541400992BD6 /* nonoka-Part21-realm */,
+				5F654DB925E5541900992BD6 /* nonoka-Part21-realmTests */,
+				5F654DC425E5541900992BD6 /* nonoka-Part21-realmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F654DA225E5541400992BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F654DB425E5541800992BD6 /* LaunchScreen.storyboard in Resources */,
+				5F654DB125E5541800992BD6 /* Assets.xcassets in Resources */,
+				5F654DAF25E5541400992BD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654DB825E5541900992BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654DC325E5541900992BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		294FEAEA30BBBCF029665590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nonoka-Part21-realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6123F27A6CF8B0F2113EF063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nonoka-Part21-realm/Pods-nonoka-Part21-realm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nonoka-Part21-realm/Pods-nonoka-Part21-realm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nonoka-Part21-realm/Pods-nonoka-Part21-realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6863FDA6BD9C6E3ECFC9301C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856434E5870DE85DA026E33A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nonoka-Part21-realmTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F601B6BC9618A6A1C9A2D6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F654DA025E5541400992BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F654DEC25E5579300992BD6 /* Fruit.swift in Sources */,
+				5F654DF125E55C2700992BD6 /* InputViewController.swift in Sources */,
+				5F654DAC25E5541400992BD6 /* ViewController.swift in Sources */,
+				5F654DA825E5541400992BD6 /* AppDelegate.swift in Sources */,
+				5F654DAA25E5541400992BD6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654DB625E5541900992BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F654DC125E5541900992BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F654DBC25E5541900992BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F654DA325E5541400992BD6 /* nonoka-Part21-realm */;
+			targetProxy = 5F654DBB25E5541900992BD6 /* PBXContainerItemProxy */;
+		};
+		5F654DC725E5541900992BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F654DA325E5541400992BD6 /* nonoka-Part21-realm */;
+			targetProxy = 5F654DC625E5541900992BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F654DAD25E5541400992BD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F654DAE25E5541400992BD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F654DB225E5541800992BD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F654DB325E5541800992BD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F654DCC25E5541900992BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F654DCD25E5541900992BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F654DCF25E5541900992BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E5A69960188DA42D7C22B59 /* Pods-nonoka-Part21-realm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
+				INFOPLIST_FILE = "nonoka-Part21-realm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nonoka.nonoka-Part21-realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F654DD025E5541900992BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8C2DD91A945721E1E2C9E9 /* Pods-nonoka-Part21-realm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
+				INFOPLIST_FILE = "nonoka-Part21-realm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nonoka.nonoka-Part21-realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F654DD225E5541900992BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C16CC8808AF621B4C40420 /* Pods-nonoka-Part21-realmTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
+				INFOPLIST_FILE = "nonoka-Part21-realmTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nonoka.nonoka-Part21-realmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nonoka-Part21-realm.app/nonoka-Part21-realm";
+			};
+			name = Debug;
+		};
+		5F654DD325E5541900992BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F3DD542EDA43B5BF1C945F /* Pods-nonoka-Part21-realmTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
+				INFOPLIST_FILE = "nonoka-Part21-realmTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nonoka.nonoka-Part21-realmTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nonoka-Part21-realm.app/nonoka-Part21-realm";
+			};
+			name = Release;
+		};
+		5F654DD525E5541900992BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC3BBD1634E61069FD066F2 /* Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
+				INFOPLIST_FILE = "nonoka-Part21-realmUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nonoka.nonoka-Part21-realmUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "nonoka-Part21-realm";
+			};
+			name = Debug;
+		};
+		5F654DD625E5541900992BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585BDA928FC29E8BDBF8B647 /* Pods-nonoka-Part21-realm-nonoka-Part21-realmUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Z4MKYS28;
+				INFOPLIST_FILE = "nonoka-Part21-realmUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nonoka.nonoka-Part21-realmUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "nonoka-Part21-realm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F654D9F25E5541400992BD6 /* Build configuration list for PBXProject "nonoka-Part21-realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F654DCC25E5541900992BD6 /* Debug */,
+				5F654DCD25E5541900992BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F654DCE25E5541900992BD6 /* Build configuration list for PBXNativeTarget "nonoka-Part21-realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F654DCF25E5541900992BD6 /* Debug */,
+				5F654DD025E5541900992BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F654DD125E5541900992BD6 /* Build configuration list for PBXNativeTarget "nonoka-Part21-realmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F654DD225E5541900992BD6 /* Debug */,
+				5F654DD325E5541900992BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F654DD425E5541900992BD6 /* Build configuration list for PBXNativeTarget "nonoka-Part21-realmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F654DD525E5541900992BD6 /* Debug */,
+				5F654DD625E5541900992BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F654D9C25E5541400992BD6 /* Project object */;
+}
