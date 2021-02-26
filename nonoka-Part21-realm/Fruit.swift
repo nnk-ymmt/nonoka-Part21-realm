@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Fruit: Object {
+    dynamic var name = ""
+    dynamic var isChecked = false
+    dynamic var createdAt = Date()
+}
