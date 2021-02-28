@@ -16,6 +16,10 @@
 		5F654DB425E5541800992BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F654DB225E5541800992BD6 /* LaunchScreen.storyboard */; };
 		5F654DEC25E5579300992BD6 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DEB25E5579300992BD6 /* Fruit.swift */; };
 		5F654DF125E55C2700992BD6 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DF025E55C2700992BD6 /* InputViewController.swift */; };
+		5F654E0025EBB15C00992BD6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654DFE25EBB15B00992BD6 /* TableViewCell.swift */; };
+		5F654E0125EBB15C00992BD6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F654DFF25EBB15B00992BD6 /* TableViewCell.xib */; };
+		5F654E0625EBB2A600992BD6 /* Input.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F654E0525EBB2A600992BD6 /* Input.storyboard */; };
+		5F654E0E25EBB70300992BD6 /* FruitUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F654E0D25EBB70300992BD6 /* FruitUseCase.swift */; };
 		793EDA6F0881BFF5B29F732B /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13AD6A635D6C75107B3956 /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework */; };
 		C11F30AD170A2D64B29851A9 /* Pods_nonoka_Part21_realmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76CC4B166A052E5977CB741 /* Pods_nonoka_Part21_realmTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +59,10 @@
 		5F654DC525E5541900992BD6 /* nonoka-Part21-realmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nonoka-Part21-realmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F654DEB25E5579300992BD6 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		5F654DF025E55C2700992BD6 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		5F654DFE25EBB15B00992BD6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5F654DFF25EBB15B00992BD6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		5F654E0525EBB2A600992BD6 /* Input.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Input.storyboard; sourceTree = "<group>"; };
+		5F654E0D25EBB70300992BD6 /* FruitUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitUseCase.swift; sourceTree = "<group>"; };
 		6F13AD6A635D6C75107B3956 /* Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nonoka_Part21_realm_nonoka_Part21_realmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76CC4B166A052E5977CB741 /* Pods_nonoka_Part21_realmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nonoka_Part21_realmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8C2DD91A945721E1E2C9E9 /* Pods-nonoka-Part21-realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nonoka-Part21-realm.release.xcconfig"; path = "Target Support Files/Pods-nonoka-Part21-realm/Pods-nonoka-Part21-realm.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,9 +136,13 @@
 				5F654DA725E5541400992BD6 /* AppDelegate.swift */,
 				5F654DA925E5541400992BD6 /* SceneDelegate.swift */,
 				5F654DEB25E5579300992BD6 /* Fruit.swift */,
+				5F654E0D25EBB70300992BD6 /* FruitUseCase.swift */,
 				5F654DAB25E5541400992BD6 /* ViewController.swift */,
 				5F654DF025E55C2700992BD6 /* InputViewController.swift */,
+				5F654DFE25EBB15B00992BD6 /* TableViewCell.swift */,
 				5F654DAD25E5541400992BD6 /* Main.storyboard */,
+				5F654E0525EBB2A600992BD6 /* Input.storyboard */,
+				5F654DFF25EBB15B00992BD6 /* TableViewCell.xib */,
 				5F654DB025E5541800992BD6 /* Assets.xcassets */,
 				5F654DB225E5541800992BD6 /* LaunchScreen.storyboard */,
 				5F654DB525E5541800992BD6 /* Info.plist */,
@@ -257,8 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F654DB425E5541800992BD6 /* LaunchScreen.storyboard in Resources */,
+				5F654E0125EBB15C00992BD6 /* TableViewCell.xib in Resources */,
 				5F654DB125E5541800992BD6 /* Assets.xcassets in Resources */,
 				5F654DAF25E5541400992BD6 /* Main.storyboard in Resources */,
+				5F654E0625EBB2A600992BD6 /* Input.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +403,9 @@
 				5F654DEC25E5579300992BD6 /* Fruit.swift in Sources */,
 				5F654DF125E55C2700992BD6 /* InputViewController.swift in Sources */,
 				5F654DAC25E5541400992BD6 /* ViewController.swift in Sources */,
+				5F654E0025EBB15C00992BD6 /* TableViewCell.swift in Sources */,
 				5F654DA825E5541400992BD6 /* AppDelegate.swift in Sources */,
+				5F654E0E25EBB70300992BD6 /* FruitUseCase.swift in Sources */,
 				5F654DAA25E5541400992BD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
