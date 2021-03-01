@@ -34,11 +34,41 @@
                             <constraint firstAttribute="bottom" secondItem="2G4-Tn-Oal" secondAttribute="bottom" id="uhx-dU-Ws6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rcL-yh-m6h"/>
+                    <navigationItem key="navigationItem" id="rcL-yh-m6h">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="D33-k6-qZS">
+                            <connections>
+                                <segue destination="pno-dt-wfo" kind="presentation" identifier="input" id="UTB-Wa-ohU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="2G4-Tn-Oal" id="YVW-0W-FYf"/>
+                        <segue destination="pdP-ke-Fq4" kind="show" identifier="edit" id="1LR-cG-OO4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="70.982142857142847"/>
+        </scene>
+        <!--Input-->
+        <scene sceneID="glp-Jx-Py9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Input" id="pno-dt-wfo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6xw-FA-Fxq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhY-kE-NPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="10"/>
+        </scene>
+        <!--Input-->
+        <scene sceneID="RNj-Ht-nem">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Input" id="pdP-ke-Fq4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZGW-5p-cSH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i26-et-gaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="00I-gk-3aW">
