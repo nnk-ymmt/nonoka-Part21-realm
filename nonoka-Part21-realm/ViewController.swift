@@ -10,10 +10,6 @@ import RealmSwift
 
 final class ViewController: UIViewController {
 
-    static let entityName = "Fruit"
-    var results: Results<Fruit> = Realm().objects(Fruit.self).sorted(byKeyPath: "createdAt")
-    var editIndexPath: IndexPath?
-
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.register(TableViewCell.loadNib(), forCellReuseIdentifier: TableViewCell.reuseIdentifier)
@@ -22,7 +18,7 @@ final class ViewController: UIViewController {
     }
 
     private(set) var editIndexPath: IndexPath?
-    private let useCase = FruitsUseCase()
+    private let repository = FruitRepository()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +33,7 @@ final class ViewController: UIViewController {
               let newFruit = inputVC.output else {
             return
         }
-        useCase.append(fruit: newFruit)
+        repository.append(fruit: newFruit)
         tableView.reloadData()
     }
 
@@ -47,8 +43,7 @@ final class ViewController: UIViewController {
               let editIndexPath = editIndexPath else {
             return
         }
-        useCase.replace(index: editIndexPath.row, fruit: fruit)
-//        tableView.reloadRows(at: [editIndexPath], with: .automatic)
+        repository.update(index: editIndexPath.row, fruit: fruit)
         tableView.reloadData()
     }
 
@@ -59,7 +54,7 @@ final class ViewController: UIViewController {
                 nextVC.mode = .input
             case "edit":
                 guard let editIndexPath = editIndexPath else { return }
-                nextVC.mode = .edit(useCase.fruits[editIndexPath.row])
+                nextVC.mode = .edit(repository.fruits[editIndexPath.row])
             default:
                 break
             }
@@ -67,6 +62,35 @@ final class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        repository.fruits.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as? TableViewCell else {
+            return UITableViewCell()
+        }
+        cell.accessoryType = UITableViewCell.AccessoryType.detailButton
+        cell.configure(fruit: repository.fruits[indexPath.row])
+        return cell
+    }
+}
+
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        repository.toggleCheck(index: indexPath.row)
+        tableView.reloadData()
+    }
+
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        editIndexPath = indexPath
+        performSegue(withIdentifier: "edit", sender: nil)
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        repository.remove(index: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
 }

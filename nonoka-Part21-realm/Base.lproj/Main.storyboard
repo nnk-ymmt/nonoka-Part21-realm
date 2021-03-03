@@ -37,13 +37,13 @@
                     <navigationItem key="navigationItem" id="rcL-yh-m6h">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="D33-k6-qZS">
                             <connections>
-                                <segue destination="pno-dt-wfo" kind="presentation" identifier="input" id="UTB-Wa-ohU"/>
+                                <segue destination="pdP-ke-Fq4" kind="show" identifier="input" id="xwU-aY-lDD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="2G4-Tn-Oal" id="YVW-0W-FYf"/>
-                        <segue destination="pdP-ke-Fq4" kind="show" identifier="edit" id="1LR-cG-OO4"/>
+                        <segue destination="pno-dt-wfo" kind="presentation" identifier="edit" id="ZXh-p1-AnX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
