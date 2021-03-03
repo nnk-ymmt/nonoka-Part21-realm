@@ -8,8 +8,8 @@
 import Foundation
 import RealmSwift
 
-class Fruit: Object {
-    dynamic var name = ""
-    dynamic var isChecked = false
-    dynamic var createdAt = Date()
+final class Fruit: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var isChecked = false
+    @objc dynamic var createdAt = Date()
 }
