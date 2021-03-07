@@ -19,7 +19,7 @@ final class InputViewController: UIViewController {
     var mode: Mode?
     private(set) var output: Fruit?
     private(set) var editName: String?
-    private let repository = FruitRepository()
+    private(set) var editUUID: UUID?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +47,9 @@ final class InputViewController: UIViewController {
             newFruit.isChecked = false
             newFruit.createdAt = Date()
             output = newFruit
-        case .edit:
+        case let .edit(fruit):
             editName = textField.text ?? ""
+            editUUID = fruit.uuid!
         }
 
         performSegue(
