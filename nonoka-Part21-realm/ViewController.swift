@@ -24,6 +24,10 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.rowHeight = 50
         tableView.isHidden = false
+
+        repository.observe(notifier: { [weak self] in
+            self?.tableView.reloadData()
+        })
     }
 
     @IBAction func cancel(segue: UIStoryboardSegue) { }
@@ -34,17 +38,15 @@ final class ViewController: UIViewController {
             return
         }
         repository.append(fruit: newFruit)
-        tableView.reloadData()
     }
 
     @IBAction func edit(segue: UIStoryboardSegue) {
         guard let inputVC = segue.source as? InputViewController,
-              let fruit = inputVC.editName,
-              let editIndexPath = editIndexPath else {
+              let newName = inputVC.editName,
+              let uuid = inputVC.editUUID else {
             return
         }
-        repository.update(index: editIndexPath.row, fruit: fruit)
-        tableView.reloadData()
+        repository.update(uuid: uuid, name: newName)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -54,7 +56,8 @@ final class ViewController: UIViewController {
                 nextVC.mode = .input
             case "edit":
                 guard let editIndexPath = editIndexPath else { return }
-                nextVC.mode = .edit(repository.fruits[editIndexPath.row])
+                let fruit = repository.load()[editIndexPath.row]
+                nextVC.mode = .edit(fruit)
             default:
                 break
             }
@@ -64,7 +67,7 @@ final class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        repository.fruits.count
+        repository.load().count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,15 +75,17 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.accessoryType = UITableViewCell.AccessoryType.detailButton
-        cell.configure(fruit: repository.fruits[indexPath.row])
+        let fruit = repository.load()[indexPath.row]
+        cell.configure(fruit: fruit)
         return cell
     }
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        repository.toggleCheck(index: indexPath.row)
-        tableView.reloadData()
+        let fruit = repository.load()[indexPath.row]
+        guard let uuid = fruit.uuid else { return }
+        repository.toggleCheck(uuid: uuid)
     }
 
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
@@ -90,7 +95,8 @@ extension ViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         guard editingStyle == .delete else { return }
-        repository.remove(index: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .automatic)
+        let fruit = repository.load()[indexPath.row]
+        guard let uuid = fruit.uuid else { return }
+        repository.remove(uuid: uuid)
     }
 }

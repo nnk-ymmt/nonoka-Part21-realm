@@ -10,43 +10,48 @@ import RealmSwift
 
 final class FruitRepository {
 
-    private(set) var fruits: [Fruit] = []
     private let realm = try! Realm()
 
-    init() {
-        fruits = load() ?? []
+    private var notificationToken: NotificationToken?
+
+    func observe(notifier: @escaping () -> Void) {
+        notificationToken = realm
+            .objects(Fruit.self)
+            .sorted(byKeyPath: "createdAt")
+            .observe { _ in
+                notifier()
+            }
     }
 
-    func load() -> [Fruit]? {
-        let fruit = realm.objects(Fruit.self).sorted(byKeyPath: "createdAt")
-        var fruitArray: [Fruit] = []
-        fruitArray.append(contentsOf: fruit)
-        return fruitArray
+    func load() -> [Fruit] {
+        let fruits = realm.objects(Fruit.self).sorted(byKeyPath: "createdAt")
+        return Array<Fruit>(fruits)
     }
 
     func append(fruit: Fruit) {
         try! realm.write {
             realm.add(fruit)
         }
-        fruits.append(fruit)
     }
 
-    func update(index: Int, fruit: String) {
+    func update(uuid: UUID, name: String) {
+        guard let fruit = realm.object(ofType: Fruit.self, forPrimaryKey: uuid.uuidString) else { return }
         try! realm.write() {
-            fruits[index].name = fruit
+            fruit.name = name
         }
     }
 
-    func toggleCheck(index: Int) {
+    func toggleCheck(uuid: UUID) {
+        guard let fruit = realm.object(ofType: Fruit.self, forPrimaryKey: uuid.uuidString) else { return }
         try! realm.write() {
-            fruits[index].isChecked.toggle()
+            fruit.isChecked.toggle()
         }
     }
 
-    func remove(index: Int) {
+    func remove(uuid: UUID) {
+        guard let fruit = realm.object(ofType: Fruit.self, forPrimaryKey: uuid.uuidString) else { return }
         try! realm.write() {
-            realm.delete(fruits[index])
+            realm.delete(fruit)
         }
-        fruits.remove(at: index)
     }
 }
